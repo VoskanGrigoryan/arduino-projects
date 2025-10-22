@@ -1,6 +1,6 @@
 // Pin assignments
-const int redPin = 9;
-const int greenPin = 10;
+const int redPin = 13;
+const int greenPin = 12;
 const int bluePin = 11;
 
 // Define colors as {R, G, B} values (0-255)

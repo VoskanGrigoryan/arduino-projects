@@ -1,22 +1,22 @@
 #include <Servo.h>
 
 Servo myServo;
-int servoPin = 3;
+int servoPin = 4;
 
 void setup() {
   myServo.attach(servoPin);
-  myServo.write(74);
+  myServo.write(44);
   delay(500);
 }
 
 void loop() {
-  // move up faster (2° steps)
-  for (int pos = 70; pos <= 96; pos += 1) {
+  for (int pos = 0; pos <= 44; pos += 1) {
     myServo.write(pos);
+    delay(10);
   }
 
-  // // move down faster (2° steps)
-  for (int pos = 96; pos >= 74; pos -= 1) {
+  for (int pos = 44; pos >= 0; pos -= 1) {
     myServo.write(pos);
+    delay(10);
   }
 }

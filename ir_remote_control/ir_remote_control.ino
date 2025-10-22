@@ -12,7 +12,7 @@ const int maxTracks = 40;  // max tracks for safety check
 bool isPlaying = false;    // track if DFPlayer is currently playing //
 
 // --Volume--
- int volume = 16;  // starting volume (0-30)
+ int volume = 22;  // starting volume (0-30)
 
 // --- IR Remote ---
 uint8_t lastCommand = 0;
